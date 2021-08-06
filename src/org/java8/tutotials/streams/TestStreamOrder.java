@@ -63,7 +63,6 @@ public class TestStreamOrder {
                 .forEach(s -> System.out.println("forEach: " + s));
 
         //we can optimize the execution call by reordering the intermediate operations
-        // filter will execute horizontally when next operation is stateful i.e. sorted
         System.out.println("3---------------------------------------------");
         Stream.of("d", "a", "b", "e", "a", "g")
                 .filter(s -> {
