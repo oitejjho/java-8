@@ -41,7 +41,7 @@ public class TestStreamsException {
                         return either.getLeft().get().toString();
                     return either.getRight().get().toString();
                 }).collect(Collectors.toList());
-
+        list.stream().forEach(System.out::println);
 
 
 

@@ -1,5 +1,6 @@
 package org.java8.tutotials.optionals;
 
+import java.util.Locale;
 import java.util.Optional;
 import java.util.function.Consumer;
 import java.util.function.Function;
@@ -28,7 +29,7 @@ public class TestOptionals {
 
         // add functions in optionals
         Function<String , String> function = b -> b.toUpperCase();
-        System.out.println(stringOptional.map(function).get());
+        System.out.println(stringOptional.map(function).get().toUpperCase(Locale.ROOT));
 
         // add supplier in optionals
         Supplier<Double> supplier = Math::random;

@@ -12,7 +12,7 @@ public class TestSuppliers {
         // supplier only produces result
 
 
-        Supplier<String> stringSupplier = String::new;
+        Supplier<Double> stringSupplier = Math::random;
         System.out.println(stringSupplier.get());
 
 

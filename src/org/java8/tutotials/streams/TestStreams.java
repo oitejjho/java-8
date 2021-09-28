@@ -18,6 +18,7 @@ public class TestStreams {
         stringCollection.add("ccc");
         stringCollection.add("bbb2");
         stringCollection.add("ddd1");
+        stringCollection.add("aaa4");
 
         //intermediate operations
         //=====================================================//

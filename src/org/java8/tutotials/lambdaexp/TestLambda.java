@@ -31,6 +31,7 @@ public class TestLambda {
         names.sort(Comparator.reverseOrder());
 
 
+        names.sort(Comparator.naturalOrder());
 
 
     }
